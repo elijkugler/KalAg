@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KalAg</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navSpace border-bottom">
+            <div class="row w-100">
+                <div class="col">
+                    <ul class="nav p-lg-5">
+                        <li class="nav-item font-weight-bold">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item font-weight-bold">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Farm">The Farm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="imageCenter"><h1>Soil 'N Sunshine</h1></div>
+                </div>
+                <div class="col">
+                        <a class="imageCenter" asp-area="" asp-page="/Index">
+                            <img src="images/soilnsunshine_svg.png" alt="Soil N Sunshine" style="width:100px;"> 
+                        </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - <a asp-area="" asp-page="/Index">Kalus Agriculture</a> - <a asp-area="" asp-page="/Practices">Practices</a> - <a asp-area="" asp-page="/About">About</a><img src="images/soilnsunshine_svg.png" style="width:120px; float:right;" />
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
