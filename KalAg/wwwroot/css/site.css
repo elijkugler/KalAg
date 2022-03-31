@@ -87,7 +87,7 @@ body {
 /* Large Header Photo
 ---------------------------------------------------*/
 .parallax {
-    background-image: url('/images/cow_looking.jpg');
+    background-image: url('/lib/images/cow_looking.jpg');
     /* Set a specific height */
     min-height: 800px;
     width: 100%;
@@ -105,4 +105,12 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+/*Farming Page*/
+.farm{
+    position: absolute;
+    width: 65%;
+}
+.farm:hover{
+    width: 75%;
 }

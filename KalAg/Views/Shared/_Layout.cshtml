@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - KalAg</title>
+    <title>@ViewData["Title"] - Kalus Agriculture</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -14,10 +14,16 @@
                 <div class="col">
                     <ul class="nav p-lg-5">
                         <li class="nav-item font-weight-bold">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item font-weight-bold">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Farm">The Farm</a>
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Home" asp-action="Farm">The Farm</a>
+                        </li>
+                        <li class="nav-item font-weight-bold">
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Home" asp-action="Shop">Shop</a>
+                        </li>
+                        <li class="nav-item font-weight-bold">
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Home" asp-action="Register">Register</a>
                         </li>
                     </ul>
                 </div>
@@ -25,8 +31,8 @@
                     <div class="imageCenter"><h1>Soil 'N Sunshine</h1></div>
                 </div>
                 <div class="col">
-                        <a class="imageCenter" asp-area="" asp-page="/Index">
-                            <img src="images/soilnsunshine_svg.png" alt="Soil N Sunshine" style="width:100px;"> 
+                        <a class="imageCenter"  asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="/lib/images/soilnsunshine_svg.png" alt="Soil N Sunshine" style="width:100px;"> 
                         </a>
                 </div>
             </div>
@@ -40,7 +46,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - <a asp-area="" asp-page="/Index">Kalus Agriculture</a> - <a asp-area="" asp-page="/Practices">Practices</a> - <a asp-area="" asp-page="/About">About</a><img src="images/soilnsunshine_svg.png" style="width:120px; float:right;" />
+            &copy; 2022 - <a asp-area="" asp-page="/Index">Kalus Agriculture</a> - <a asp-area="" asp-page="/Practices">Practices</a> - <a asp-area="" asp-page="/About">About</a><img src="/lib/images/soilnsunshine_svg.png" style="width:120px; float:right;" />
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

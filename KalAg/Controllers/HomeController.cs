@@ -22,8 +22,28 @@ namespace KalAg.Controllers
         {
             return View();
         }
+        #region FarmPages
+        public IActionResult Farm()
+        {
+            return View();
+        }
 
-        public IActionResult Privacy()
+        public IActionResult FarmRowCrop()
+        {
+            return View();
+        }
+
+        public IActionResult FarmGrazing()
+        {
+            return View();
+        }
+        #endregion
+        public IActionResult Shop()
+        {
+            return View();
+        }
+
+        public IActionResult Register()
         {
             return View();
         }
