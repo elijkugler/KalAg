@@ -108,9 +108,10 @@ body {
 }
 /*Farming Page*/
 .farm{
-    position: absolute;
+    position: fixed;
     width: 65%;
+    transition: transform .2s;
 }
-.farm:hover{
-    width: 75%;
+.svg|rect:hover{
+    transform: scale(1.1);
 }

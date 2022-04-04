@@ -28,15 +28,6 @@ namespace KalAg.Controllers
             return View();
         }
 
-        public IActionResult FarmRowCrop()
-        {
-            return View();
-        }
-
-        public IActionResult FarmGrazing()
-        {
-            return View();
-        }
         #endregion
         public IActionResult Shop()
         {
