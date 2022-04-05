@@ -56,11 +56,13 @@ button.accept-policy {
 html {
   position: relative;
   min-height: 100%;
+  width: 100% !important;
 }
 
 body {
   /* Margin bottom by footer height */
   margin-bottom: 150px !important;
+  width: 100% !important;
 }
 .footer {
   position: absolute;
@@ -68,6 +70,9 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+main{
+    width: 100% !important;
 }
 /*Brought Over from Old Porject*/
 /* Navigation Bar Logo Movement
@@ -105,13 +110,4 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-}
-/*Farming Page*/
-.farm{
-    position: fixed;
-    width: 65%;
-    transition: transform .2s;
-}
-.svg|rect:hover{
-    transform: scale(1.1);
 }
